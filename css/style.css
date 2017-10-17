@@ -34,11 +34,12 @@ html,body{
     height: 100%;
 }
 
-img.dia{
-	position: absolute;
-	left: 50%;
-    top: 50%;
-	-webkit-transform: translateY(-50%) translateX(-50%);
+div.dia{
+	text-align:center;
+}
+
+img.dia {
+	vertical-align:middle;
 }
 
 .title {
