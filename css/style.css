@@ -1,9 +1,7 @@
 nav.navbar{
-    margin-bottom: 3rem;
     background-color: #428bca;
     -webkit-box-shadow: inset 0 -0.1rem 0.25rem rgba(0,0,0,.1);
     box-shadow: inset 0 -0.1rem 0.25rem rgba(0,0,0,.1);
-}
 }
 
 .space {
@@ -11,47 +9,12 @@ nav.navbar{
 	margin-right: 10px;
 }
 
-html,body{
-	height:100%;
-}
-
-div.carousel-item {
-	height: 100%;
-}
-
-.carousel,.item,.active{
-	height:100%;
-}
-.carousel-inner{
-	height:100%;
-}
-
-.carousel-inner>.item>img {
-    height: 100%;
-}
-
-img.res {
-	width: 100%;
-}
-
-
 .carousel {
 	margin-bottom: 4rem;
 }
 
 .carousel-item{
 	background: gray;
-}
-
-.carousel,.item,.active{
-	height:100%;
-}
-.carousel-inner{
-	height:100%;
-}
-
-.carousel-inner>.item>img {
-    height: 100%;
 }
 
 div.dia{
@@ -69,12 +32,12 @@ img.dia {
 
 .subTitle{
 	color: #FFFFFF;
-	margin-bottom: 10rem;
+	margin-bottom: 10%;
 }
 
 .subTitle-white{
 	color: #3f3f3f;
-	margin-bottom: 10rem;
+	margin-bottom: 10%;
 }
 
 img.info{
@@ -116,11 +79,6 @@ hr{
     font-weight: normal;
 }
 
-@media (min-width: 40em)
-.blog-title {
-    font-size: 3.5rem;
-}
-
 .blog-description {
     font-size: 1.1rem;
     color: #999;
@@ -159,7 +117,9 @@ body {
     color: #999;
 }
 
-
+img.res {
+	max-width: 100%;
+}
 
 .blog-pagination {
     margin-bottom: 4rem;
@@ -180,7 +140,38 @@ body {
     margin: 0 -1rem 1rem;
 }
 
+.profile {
+	background-color: gray;
+	margin-top: 76px;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
 
+.name {
+	text-align: center;
+	color: #FFFFFF;
+}
 
+.bio {
+	color: #FFFFFF;
+	padding: 10px;
+}
 
+.ch_element {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: auto;
+	margin-top: auto;
+}
 
+.contenthover {
+	height: 100%;
+}
+
+@media (min-width: 600px) {
+	.small {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
