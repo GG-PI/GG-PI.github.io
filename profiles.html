@@ -47,13 +47,50 @@
 	<!-- end navbar -->
   
   <!-- Our description -->
-  <img id="joris" src="..."/>
-  <div class="joris_Content">
-  
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <img id="joris" src="assets/joris.jpg" width="300" height="300"/>
+        <div class="contenthover">
+          <h3>Joris Van Duyse</h3>
+          <P>Joris his biografy.</>
+        </div>
+      </div>
+      <div class="col-6">
+        <img id="jens" src="assets/jens.jpeg" width="300" height="300"/>
+        <div class="contenthover">
+          <h3>Jens Van Humbeeck</h3>
+          <P>Jens his biografy.</>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- end description -->
   
   <!-- scripts -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
   <script src="js/jquery.contenthover.min.js"></script>
+	  
+  <script>
+    $('#joris').contenthover({
+      overlay_width:270,
+      overlay_height:180,
+      effect:'slide',
+      slide_direction:'right',
+      overlay_x_position:'right',
+      overlay_y_position:'center',
+      overlay_background:'#000',
+      overlay_opacity:0.8
+    });
+    $('#jens').contenthover({
+      overlay_width:270,
+      overlay_height:180,
+      effect:'slide',
+      slide_direction:'left',
+      overlay_x_position:'left',
+      overlay_y_position:'center',
+      overlay_background:'#000',
+      overlay_opacity:0.8
+    });
+  </script>
 </html>
