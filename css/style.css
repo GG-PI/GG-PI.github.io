@@ -141,37 +141,38 @@ img.res {
 }
 
 .profile {
-	background-color: gray;
-	margin-top: 76px;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+	background-color: #32cd32;
+	width: 300px;
+	display: table;
+	margin: 0 auto;
+	border-style: groove;
 }
 
 .name {
 	text-align: center;
 	color: #FFFFFF;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	margin: 0;
 }
 
 .bio {
-	color: #FFFFFF;
+	color: #32cd32;
 	padding: 10px;
 }
 
 .ch_element {
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	margin-bottom: auto;
-	margin-top: auto;
+	margin: 0;
 }
 
 .contenthover {
 	height: 100%;
+	background-color: gray;
 }
 
-@media (min-width: 600px) {
-	.small {
-		flex: 0 0 50%;
-		max-width: 50%;
-	}
+.img-fluid {
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
 }
