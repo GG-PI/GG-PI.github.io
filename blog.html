@@ -55,26 +55,27 @@
 	</div>
 	
 	<div class="container">
-	  <div class="row">
-	    <!-- blog post -->
-		<div class="blog-post">
-            <h2 class="blog-post-title">Mindmap</h2>
-	    <p class="blog-post-meta">October 21, 2017 by <a href="#">Joris</a></p>
-	  
-	    <p>This mindmap shows all the futur objectives. Some are possible and some aren't. Having fantasy is important. But to be able to really built something is so much better. That is why we made this mindmap. It is an easy road to follow and it gives us a good foundation to start on. A clear path is something that is of major import when you're creating a project off this size.</p>
-	    <p>If you want to explore our mindmap even better then just looking at a picture just go to: <a href="https://mm.tt/975947672?t=UG2Q2uHqL2">GG-PI Mindmap</a> "No login required". Or if you want to create your own mindmaps at <a href="https://www.mindmeister.com">Mindmeister.com</a></p>
-           		<img class="img-fluid mx-auto" src="assets/mindmap.png" alt="Mindmap">
-			  
-          </div>	  
+	  <div class="row">	  
 	    <!-- blog main -->
 		<div class="col-sm-8 blog-main">
+		  <!-- blog post -->
+		  <div class="blog-post">
+            <h2 class="blog-post-title">Mindmap</h2>
+	        <p class="blog-post-meta">October 21, 2017 by <a href="#">Joris/Jens</a></p>
+	  
+	        <p>This mindmap shows all the futur objectives. Some are possible and some aren't. Having fantasy is important. But to be able to really built something is so much better. That is why we made this mindmap. It is an easy road to follow and it gives us a good foundation to start on. A clear path is something that is of major import when you're creating a project off this size.</p>
+	        <p>If you want to explore our mindmap even better then just looking at a picture just go to: <a href="https://mm.tt/975947672?t=UG2Q2uHqL2">GG-PI Mindmap</a> "No login required". Or if you want to create your own mindmaps at <a href="https://www.mindmeister.com">Mindmeister.com</a></p>
+		    <img id="mindmap" class="img-fluid" src="assets/mindmap.jpg" alt="">	  
+			
+		  </div>
+		  
 		  <!-- blog post -->
 		  <div class="blog-post">
             <h2 class="blog-post-title">The electrical circuit</h2>
             <p class="blog-post-meta">October 17, 2017 by <a href="index.html#who">Jens / Joris</a></p>
 
             <p>This is our electric circuit. We used a program named <a href="http://fritzing.org">Fritzing</a> to really show the tech side of our drone.</p>
-			<img class="img-fluid" src="assets/fritz.png" alt="Electronics">
+			<img id="circuit" class="img-fluid" src="assets/fritz.png" alt="Electronics">
           </div>
 		  
 		  <!-- blog post -->
@@ -89,7 +90,7 @@
             <p class="blog-post-meta">October 15, 2017 by <a href="index.html#who">Jens</a></p>
 
             <p>A blueprint of the drone.</p>
-            <img class="img-fluid" src="assets/sketch.jpg" alt="sketch">
+            <img id="blue" class="img-fluid" src="assets/sketch.jpg" alt="sketch">
             
           </div>
 		  
@@ -150,6 +151,13 @@
 	</div>
 	<!--end blog -->
 	  
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content img-fluid" id="img01">
+	  <div id="caption"></div>
+	</div>
+	  
 	<!-- footer -->
 	<footer class="blog-footer">
       <p>
@@ -164,6 +172,44 @@
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.contenthover.min.js"></script>
+	
+	<script>
+	// Get the modal
+	var modal = document.getElementById('myModal');
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById('mindmap');
+	var img2 = document.getElementById('blue');
+	var img3 = document.getElementById('circuit');
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	
+	//handle click for myImg
+	img.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.src;
+	}
+	
+	//handle click for myImg2
+	img2.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.src;
+	}
+	
+	//handle click for myImg3
+	img3.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.src;
+	}
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+		modal.style.display = "none";
+	}
+	</script>
 	
   </body>
 </html>
