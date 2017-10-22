@@ -204,7 +204,6 @@ img.res {
 
 /* Modal Content (image) */
 .modal-content {
-	padding-right: 65px;
     margin: auto;
     display: block;
 	max-width: calc(100% - 140px);
