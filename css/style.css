@@ -257,9 +257,55 @@ img.res {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 212px){
+	.carousel{
+		margin-top: 116px;
+		max-height: calc(100% - 116px);
+	}
+}
+
+@media only screen and (max-width: 300px){
+	.subTitle-white{
+		font-size: 50%;
+		margin-bottom: 0px;
+	}
+	.subTitle{
+		font-size: 50%;
+		margin-bottom: 0px;
+	}
+	.title{
+		font-size: 60%;
+		margin-bottom: 0px;
+	}
+}
+
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) and (min-width: 300px){
     .modal-content {
         width: 100%;
     }
+	.subTitle-white{
+		font-size: 75%;
+		margin-bottom: 0px;
+	}
+	.subTitle{
+		font-size: 75%;
+		margin-bottom: 0px;
+	}
+	.title{
+		font-size: 85%;
+		margin-bottom: 0px;
+	}
+}
+
+@media only screen and (min-width: 1000px){
+	.subTitle-white{
+		margin-bottom: 200px;
+	}
+	.subTitle{
+		margin-bottom: 200px;
+	}
+	.carousel{
+		max-height: calc(100% - 76px);
+	}
 }
