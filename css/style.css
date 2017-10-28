@@ -106,7 +106,7 @@ body {
 }
 
 .blog-post {
-    margin-bottom: 4rem;
+    margin-top: 7rem;
 }
 
 .blog-post-title {
@@ -279,6 +279,72 @@ img.res {
 	}
 }
 
+/* Large screen weergeven vanaf 1920px*/
+@media screen and (min-width: 1280px) {
+    .largescreen {
+        display: block;
+    }
+}
+
+/* Large screen verbergen voor alles kleiner dan 1920px*/
+@media screen and (max-width: 1280px) {
+    .largescreen {
+        display: none;
+    }
+}
+
+
+/*Volgorde van onderstaande (medium of alles met waarin een min & max gecombineerd worden) screens is belangrijk! Indien je niet de juiste volgorde gebruikt worden er dubbele weergegeven!*/
+
+
+/* Medium screen verbergen voor alles groter dan 1920px*/
+@media screen and (min-width:1280px) {
+    .mediumscreen {
+        display: none;
+    }
+}
+
+/* Medium screen verbergen voor alles kleiner dan 1120px*/
+@media screen and (max-width: 853px) {
+    .mediumscreen {
+        display: none;
+    }
+}
+
+/* Medium screen weergeven voor alles tussen dan 1120 en 1920px*/
+@media screen and (min-width:853px) and (max-width:1280px) {
+    .mediumscreen {
+        display: block;
+    }
+}​
+
+/* Extra small screen weergeven voor alles kleiner dan dan 700px*/
+​@media screen and (max-width: 853px) {
+    .smallscreen {
+        display: block;
+    }
+}
+
+/* Small screen verbergen voor alles groter dan 700px*/
+@media screen and (min-width: 853px) {
+    .smallscreen {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+	.subTitle-white{
+		margin-bottom: 200px;
+	}
+	.subTitle{
+		margin-bottom: 200px;
+	}
+	.carousel{
+		max-height: calc(100% - 76px);
+	}
+}
+
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) and (min-width: 300px){
     .modal-content {
@@ -295,17 +361,5 @@ img.res {
 	.title{
 		font-size: 85%;
 		margin-bottom: 0px;
-	}
-}
-
-@media only screen and (min-width: 1000px){
-	.subTitle-white{
-		margin-bottom: 200px;
-	}
-	.subTitle{
-		margin-bottom: 200px;
-	}
-	.carousel{
-		max-height: calc(100% - 76px);
 	}
 }
