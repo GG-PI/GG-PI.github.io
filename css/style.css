@@ -1,7 +1,9 @@
 nav.navbar{
-    background-color: #428bca;
     -webkit-box-shadow: inset 0 -0.1rem 0.25rem rgba(0,0,0,.1);
     box-shadow: inset 0 -0.1rem 0.25rem rgba(0,0,0,.1);
+	background: rgba(66, 139, 0, 0.8);
+	opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
 }
 
 .space {
@@ -11,12 +13,20 @@ nav.navbar{
 
 .carousel {
 	max-height: 100%;
-	margin-top: 76px;
 	margin-bottom: 4rem;
 }
 
 .carousel-item{
 	background: gray;
+}
+
+.carousel-control-next-icon {
+    background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%237D0541' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+	color: black;
+}
+.carousel-control-prev-icon {
+    background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%237D0541' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+	color: black;
 }
 
 div.dia{
