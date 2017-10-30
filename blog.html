@@ -203,6 +203,7 @@
 	var img = document.getElementById('mindmap');
 	var img2 = document.getElementById('blue');
 	var img3 = document.getElementById('circuit');
+	var img4 = document.getElementById('PI3');
 	var modalImg = document.getElementById("img01");
 	var captionText = document.getElementById("caption");
 	
@@ -220,6 +221,12 @@
 	
 	//handle click for myImg3
 	img3.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.src;
+	}
+	
+	//handle click for myImg4
+	img4.onclick = function(){
 		modal.style.display = "block";
 		modalImg.src = this.src;
 	}
