@@ -30,13 +30,19 @@
 		<span class="navbar-toggler-icon"></span>
 	  </button>
 
-	  <div class="navbar-collapse collapse" id="navbarCollapse">
+	  <div class="navbar-collapse collapse menu-center" id="navbarCollapse">
 		<ul class="navbar-nav ml-auto">
-		  <li class="nav-item active space">
-			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		  <li class="nav-item space">
+			<a class="nav-link active" href="#Carousel">Home <span class="sr-only">(current)</span></a>
 		  </li>
 		  <li class="nav-item space">
-			<a class="nav-link" href="#">Nothing</a>
+			<a class="nav-link" href="#who">Who</a>
+		  </li>
+		  <li class="nav-item space">
+			<a class="nav-link" href="#what">What</a>
+		  </li>
+		  <li class="nav-item space">
+			<a class="nav-link" href="#why">Why</a>
 		  </li>
 		  <li class="nav-item space">
 			<a class="nav-link" href="blog.html">Blog</a>
@@ -169,7 +175,7 @@
         <div class="col-md-12">
           <h2 class="featurette-heading">Who are we? <span class="text-muted">What are we interested in?</span></h2>
           <p class="lead">The team that will be working on GG-PI includes Joris and Jens. We have the same goals. We both are much a like. We enjoy working on these kind of projects. Although our intrests are some sort of different we seem to find ourselfs in a good position to finnish this project with great succes. Simply put: My name Joris Van Duyse and my teammate is Jens Van Humbeeck. We both love flying. So everything that has to do with planes, drones, physics, aerodynamics and programming are things that we are interested in.</p>
- 	</div>
+ 	  </div>
         <div class="col-md-6" style="padding: 10px; width: 310px; margin: 0 auto; flex: 0;">
           <div class="profile">
 		    <h3 class="name">Joris Van Duyse</h3>
@@ -229,6 +235,7 @@
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.contenthover.min.js"></script>
+	<script src="js/affix.js"></script>
 	<script>
     $('#joris').contenthover({
       overlay_width:270,
@@ -250,6 +257,29 @@
       overlay_background:'#000',
       overlay_opacity:0.8
     });
+  </script>
+  <script>
+    $(document).ready(function () {
+    
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+});
   </script>
   </body>
 </html>
