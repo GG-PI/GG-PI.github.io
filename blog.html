@@ -57,7 +57,19 @@
 		<div class="col-sm-8 blog-main">
 		<!-- blog post -->
 		  <div class="blog-post">
-            <h2 class="blog-post-title">3D desingnig</h2>
+            <h2 class="blog-post-title">The batteries</h2>
+			<p class="blog-post-meta">November 1, 2017 by <a href="index.html#who">Joris</a></p>
+			<p>In order to power our drone. We'll need batteries. Luckily we still have 2 Lipo batteries laying around in the workshop. Using these will safe us some money. We also know out of experience that they are trustworthy. Because the last thing we want is a drone that ends up in flames.</p>
+			
+			<p>We will use 2 separate powersupplies. One that provides electicity for our thurst. And one to power our Raspberry PI 3. This means that we can easely change the batteries for our props without turning of the system.</p> 
+			<p>The batteries that we'll use for our thrust are the turnigy 3s 20c 2200mah. We have two of these. The battery it self is very high kwality and is used in most main-stream AC planes.</a></p>
+			<img id="turnigy" class="img-fluid" src="assets/battery.jpg" alt="battery">	
+			
+          </div>
+		
+		<!-- blog post -->
+		  <div class="blog-post">
+            <h2 class="blog-post-title">3D design</h2>
 			<p class="blog-post-meta">October 30, 2017 by <a href="index.html#who">Joris</a></p>
 			<p>To get a better idea of how the drone will look like we used a website named <a href="https://www.thingiverse.com">www.thingiverse.com</a> on this website you can see multiple prefabs. Under every 3Dprefab there is a downloadlink. These files are compatible with most 3D printers. This means that we can easely print it. Thanks to these websites we can work more efficient.</p>
 			
@@ -71,9 +83,9 @@
 		  <div class="blog-post">
             <h2 class="blog-post-title">Raspberry PI 3</h2>
 			<p class="blog-post-meta">October 29, 2017 by <a href="index.html#who">Joris</a></p>
-			<p>Getting the the drone to fly on a PI controlled software won't be easy. It is something new for both of us. Luckely we have people that can help us. Sure there is a long way to a fully operating PI-controlled drone. We might even download software from the internet to install on our drone. Just to get to know the PI's "behavior". Software is free to download on <a href="https://www.raspberrypi.org">raspberrypi.org</a></p>
+			<p>Getting the the drone to fly on a PI controlled software won't be easy. It is something new for both of us. Luckily we have people that can help us. Sure there is a long way to a fully operating PI-controlled drone. We might even download software from the internet to install on our drone. Just to get to know the PI's "behavior". Software is free to download on <a href="https://www.raspberrypi.org">raspberrypi.org</a></p>
 			
-			<p>What is a Raspberry PI? The PI is a verry small computer. Just like every other computer it contains a CPU, RAM, a power supply and storage possibilities.</p>
+			<p>What is a Raspberry PI? The PI is a very small computer. Just like every other computer it contains a CPU, RAM, a power supply and storage possibilities.</p>
 			 <img id="PI3" class="img-fluid" src="assets/PI3.jpg" alt="PI3">	
 			
 			<p>The Raspberrt PI 3 has a Cortex A53 1.2 GHz processor and 1GB of DDR2 RAM. Its powersupply is connected with a micro-USB port. So it can be connected to a batterypack. It weighs 45gram. And has a built-in Wifi and Bluetooth 4.2 connection. The Raspberry PI3 model B costs around 40€. We will buy it from <a href="https://www.megekko.nl/product/2033/162599/Raspberry-Pi/Raspberry-Pi-3-Model-B-1GB/">Megekko.nl</a></p>
@@ -107,7 +119,8 @@
 		  <div class="blog-post">
             <h2 class="blog-post-title">Design</h2>
 			<p class="blog-post-meta">October 20, 2017 by <a href="index.html#who">Joris</a></p>
-			<p>There are a couple of things that we want to built. Thse are sort of upgrades of the drone. Building these things wont be easy. We will need the drone design to be able to upgrade it.</p>			  
+			<p>There are a couple of things that we want to built. Thse are sort of upgrades of the drone. Building these things wont be easy. We will need the drone design to be able to upgrade it.</p>
+			<img id="design" class="img-fluid" src="assets/3D3.jpg" alt="3D3"
           </div>
 		  <hr class="featurette-divider">
 		  
@@ -152,8 +165,8 @@
 		  
 		  <!-- pagination -->
 		  <nav class="blog-pagination">
-            <a class="btn btn-outline-primary" href="#">Older</a>
-            <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+            <a class="btn btn-outline-primary" href="#">Newer</a>
+            <a class="btn btn-outline-secondary disabled" href="#">Older</a>
           </nav>
 		</div>
 		
@@ -184,7 +197,7 @@
 	  
 	<!-- The Modal -->
 	<div id="myModal" class="modal">
-	  <span class="close">&times;</span>
+	  <span class="close">close</span>
 	  <img class="modal-content img-fluid" id="img01">
 	  <div id="caption"></div>
 	</div>
@@ -209,10 +222,14 @@
 	var modal = document.getElementById('myModal');
 
 	// Get the image and insert it inside the modal - use its "alt" text as a caption
-	var img = document.getElementById('mindmap');
-	var img2 = document.getElementById('blue');
+	var img = document.getElementById('blue');
+	var img2 = document.getElementById('design');
 	var img3 = document.getElementById('circuit');
-	var img4 = document.getElementById('PI3');
+	var img4 = document.getElementById('mindmap');
+	var img5 = document.getElementById('mindmap');
+	var img6 = document.getElementById('PI3');
+	var img7 = document.getElementById('3D2');
+	var img8 = document.getElementById('turnigy');
 	var modalImg = document.getElementById("img01");
 	var captionText = document.getElementById("caption");
 	
@@ -236,6 +253,30 @@
 	
 	//handle click for myImg4
 	img4.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.src;
+	}
+	
+	//handle click for myImg5
+	img5.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.src;
+	}
+	
+	//handle click for myImg4
+	img6.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.src;
+	}
+
+	//handle click for myImg4
+	img7.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.src;
+	}
+	
+	//handle click for myImg4
+	img8.onclick = function(){
 		modal.style.display = "block";
 		modalImg.src = this.src;
 	}
