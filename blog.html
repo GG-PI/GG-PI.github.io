@@ -1,309 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-	
-	<title>GG-PI Blog</title>
-	<link rel="icon" type="image/png" href="assets/favicon.png">
-  
-	<!-- Required meta tags -->
-    <meta charset="utf-8">
-	<meta name="description" content="GG-PI website">
-	<meta name="keywords" content="GG-PI, Drone, Raspberry, Raspberry PI, PI, Quadcopter">
-	<meta name="author" content="Jens Van Humbeeck">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
-	<link rel="stylesheet" type="text/css" href="css/style.css" >
+<html lang="en">
+
+  <head>
+    
+	<!-- title -->
+    <title>GG-PI Website</title>
 	
-    <title>GG-PI Blog</title>
+	<!-- logo -->
+	<link rel="icon" type="image/png" href="assets/favicon.png">
+	
+	<!-- search engine info -->
+	<meta charset="UTF-8">
+	<meta name="description" content="GG-PI Blog">
+	<meta name="author" content="Jens Van Humbeeck &#38; Joris Van Duyse">
+	<meta name="keywords" content="GG-PI, Drone, Raspberry, Raspberry PI, PI, Quadcopter, Blog">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/blog_style.css" >
+	
   </head>
   
   <body>
-  
-    <!-- navbar -->
-	<nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
-	  <a class="navbar-brand space" href="index.html">
-		<img src="assets/logo.png" width="90" height="50" alt="">
+    
+	<!-- navbar -->
+	<div id="navbar" state="false">
+	  
+	  <!-- logo -->
+	  <a href="index.html">
+	    <img id="logo" src="assets/logo.png">
 	  </a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
-
-	  <div class="collapse navbar-collapse" id="navbarCollapse">
-		<ul class="navbar-nav ml-auto">
-		  <li class="nav-item space">
-			<a class="nav-link" href="index.html">Home</a>
-		  </li>
-		  <li class="nav-item active space">
-			<a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
-		  </li>
+	  
+	  <!-- buttons -->
+	  <div id="buttons">
+	    <ul class="list">
+		  <li><a id="bhome" href="index.html">Home</a></li>
+		  <li><a href="blog.html" class="active">Blog</a></li>
 		</ul>
 	  </div>
-	</nav>
-	<!-- end navbar -->
 	  
-	<!-- blog -->
-	<div class="blog-header">
-	  <div class="container">
-	    <h1 class="blog-title">GG-PI Blog</h1>
-		<p class="lead blog-description">Our project progression.</p>
+	  <!-- collapse -->
+	  <div id="collapse">
+	    <button id="collapsor">&#9776;</button>
 	  </div>
+	  
+	  
 	</div>
 	
-	<div class="container">
-	  <div class="row">	  
-	    <!-- blog main -->
-		<div class="col-sm-8 blog-main">
-		<!-- blog post -->
-		  <div class="blog-post">
-            <h2 class="blog-post-title">Working with 3D programs</h2>
-			<p class="blog-post-meta">November 2, 2017 by <a href="index.html#who">Joris</a></p>
-			<p>This is a small show off how our drone looks like in windows 3D.</p>
-			<img id="3D Drone" class="img-fluid" src="assets/3Ddrone.jpg" alt="3D Drone">	
-			
-          </div>
+	<!-- header -->
+	<div id="home" class="header">
+	  <h1>GG-PI blog</h1>
+	  <p>See the progression we have made.</p>
+	</div>
+	
+	<!-- separater -->
+	<hr class="separator">
+	
+	<!-- right side panel -->
+	<div class="sidebar">
+	  <h4>Futur Plans</h4>
+	  <p>Creating a Raspberry PI controlled quadcopter will be our main goal. Other plans are:</p>
+	  <ul>
+        <li>Cactus skeleton frame</li>
+        <li>Flight pilot</li>
+        <li>Led ligths</li>
+		<li>Retractable landing gear</li>
+		<li>Mounted camera</li>
+		<li>An Airsoft gun mount</li>
+		<li>Remote controller</li>
+		<li>Airsoft gun trigger</li>
+		<li>More later</li>
+      </ul>
+	</div>
+	
+	<!-- blog posts -->
+	<div class="posts">
+	  
+	  <!-- separater (for splitting the post section from the sidebar with a screen smaller then 600px) -->
+	  <hr class="separator resp">
+	  
+	  <!-- blog post example -->
+	  <div class="post">
+	    
+		<!-- separater -->
+		<hr class="separator">
 		
-		<!-- blog post -->
-		  <div class="blog-post">
-            <h2 class="blog-post-title">The batteries</h2>
-			<p class="blog-post-meta">November 1, 2017 by <a href="index.html#who">Joris</a></p>
-			<p>In order to power our drone. We'll need batteries. Luckily we still have 2 Lipo batteries laying around in the workshop. Using these will safe us some money. We also know out of experience that they are trustworthy. Because the last thing we want is a drone that ends up in flames.</p>
-			
-			<p>We will use 2 separate powersupplies. One that provides electicity for our thurst. And one to power our Raspberry PI 3. This means that we can easely change the batteries for our props without turning of the system.</p> 
-			<p>The batteries that we'll use for our thrust are the turnigy 3s 20c 2200mah. We have two of these. The battery it self is very high kwality and is used in most main-stream AC planes.</a></p>
-			<img id="turnigy" class="img-fluid" src="assets/battery.jpg" alt="battery">	
-			
-          </div>
+	    <h2>Title</h2>
+		<p class="meta">Date, 2017 by <a href="index.html#who">Name</a>.</p>
+		<p>Paragraph</p>
+		<img src="assets/" alt="image"></img>
 		
-		<!-- blog post -->
-		  <div class="blog-post">
-            <h2 class="blog-post-title">3D design</h2>
-			<p class="blog-post-meta">October 30, 2017 by <a href="index.html#who">Joris</a></p>
-			<p>To get a better idea of how the drone will look like we used a website named <a href="https://www.thingiverse.com">www.thingiverse.com</a> on this website you can see multiple prefabs. Under every 3Dprefab there is a downloadlink. These files are compatible with most 3D printers. This means that we can easely print it. Thanks to these websites we can work more efficient.</p>
+	  </div>
+	  
+	  <!-- blog post -->
+	  <div class="post">
+	    
+		<!-- separater -->
+		<hr class="separator">
+		
+	    <h2>Working with 3D programs</h2>
+		<p class="meta">November 2, 2017 by <a href="index.html#who">Joris</a>.</p>
+		<p>This is a small show off how our drone looks like in windows 3D.</p>
+		<img src="assets/3Ddrone.jpg" alt="3dDrone"></img>
+		
+	  </div>
+	  
+	  <!-- blog post -->
+	  <div class="post">
+	    
+		<!-- separater -->
+		<hr class="separator">
+		
+	    <h2>The batteries</h2>
+		<p class="meta">November 1, 2017 by <a href="index.html#who">Joris</a>.</p>
+		<p>In order to power our drone. We'll need batteries. Luckily we still have 2 Lipo batteries laying around in the workshop. Using these will safe us some money. We also know out of experience that they are trustworthy. Because the last thing we want is a drone that ends up in flames.</p>
 			
-			<p>This is one of those 3Dprefabs that we will most likely be using for our drone.</p> 
-			<p>LINK: <a href="https://www.thingiverse.com/thing:2269499">Shuriken</a></p>
-			<img id="3D2" class="img-fluid" src="assets/3D2.jpg" alt="3D2">	
+		<p>We will use 2 separate powersupplies. One that provides electicity for our thurst. And one to power our Raspberry PI 3. This means that we can easely change the batteries for our props without turning of the system.</p> 
+		<p>The batteries that we'll use for our thrust are the turnigy 3s 20c 2200mah. We have two of these. The battery it self is very high kwality and is used in most main-stream AC planes.</p>
+		<img src="assets/battery.jpg" alt="battery"></img>
+		
+	  </div>
+	  
+	  <!-- blog post -->
+	  <div class="post">
+	    
+		<!-- separater -->
+		<hr class="separator">
+		
+	    <h2>3D design</h2>
+		<p class="meta">October 30, 2017 by <a href="index.html#who">Joris</a>.</p>
+		<p>To get a better idea of how the drone will look like we used a website named <a href="https://www.thingiverse.com">www.thingiverse.com</a> on this website you can see multiple prefabs. Under every 3Dprefab there is a downloadlink. These files are compatible with most 3D printers. This means that we can easely print it. Thanks to these websites we can work more efficient.</p>
 			
-          </div>
-		    
-		<!-- blog post -->
-		  <div class="blog-post">
-            <h2 class="blog-post-title">Raspberry PI 3</h2>
-			<p class="blog-post-meta">October 29, 2017 by <a href="index.html#who">Joris</a></p>
-			<p>Getting the the drone to fly on a PI controlled software won't be easy. It is something new for both of us. Luckily we have people that can help us. Sure there is a long way to a fully operating PI-controlled drone. We might even download software from the internet to install on our drone. Just to get to know the PI's "behavior". Software is free to download on <a href="https://www.raspberrypi.org">raspberrypi.org</a></p>
+		<p>This is one of those 3Dprefabs that we will most likely be using for our drone.</p> 
+		<p>LINK: <a href="https://www.thingiverse.com/thing:2269499">Shuriken</a></p>
+		<img src="assets/3D2.jpg" alt="3D2"></img>
+		
+	  </div>
+	  
+	  <!-- blog post -->
+	  <div class="post">
+	    
+		<!-- separater -->
+		<hr class="separator">
+		
+	    <h2>Raspberry PI 3</h2>
+		<p class="meta">October 29, 2017 by <a href="index.html#who">Joris</a>.</p>
+		<p>Getting the the drone to fly on a PI controlled software won't be easy. It is something new for both of us. Luckily we have people that can help us. Sure there is a long way to a fully operating PI-controlled drone. We might even download software from the internet to install on our drone. Just to get to know the PI's "behavior". Software is free to download on <a href="https://www.raspberrypi.org">raspberrypi.org</a></p>
 			
 			<p>What is a Raspberry PI? The PI is a very small computer. Just like every other computer it contains a CPU, RAM, a power supply and storage possibilities.</p>
-			 <img id="PI3" class="img-fluid" src="assets/PI3.jpg" alt="PI3">	
-			
-			<p>The Raspberrt PI 3 has a Cortex A53 1.2 GHz processor and 1GB of DDR2 RAM. Its powersupply is connected with a micro-USB port. So it can be connected to a batterypack. It weighs 45gram. And has a built-in Wifi and Bluetooth 4.2 connection. The Raspberry PI3 model B costs around 40€. We will buy it from <a href="https://www.megekko.nl/product/2033/162599/Raspberry-Pi/Raspberry-Pi-3-Model-B-1GB/">Megekko.nl</a></p>
-          </div>
-		  <hr id="plan" class="featurette-divider">
-		  
-		  <!-- blog post -->
-		  <div class="blog-post">
-            <h2 class="blog-post-title">Mindmap</h2>
-	        <p class="blog-post-meta">October 21, 2017 by <a href="#">Joris/Jens</a></p>
-	  
-	        <p>This mindmap shows all the futur objectives. Some are possible and some aren't. Having fantasy is important. But to be able to really built something is so much better. That is why we made this mindmap. It is an easy road to follow and it gives us a good foundation to start on. A clear path is something that is of major import when you're creating a project off this size.</p>
-	        <p>You can click on the picture down below. But if you want to explore our mindmap even better then just looking at a picture just go to: <a href="https://mm.tt/975947672?t=UG2Q2uHqL2">GG-PI Mindmap</a> "No login required".</p> 
-			<p>Or if you want to create your own mindmap. Go to: <a href="https://www.mindmeister.com">Mindmeister.com</a>.</p>
-		    <img id="mindmap" class="img-fluid" src="assets/mindmap.jpg" alt="mindmap">	  
-			
-		  </div>
-		  <hr class="featurette-divider">
-		  
-		  <!-- blog post -->
-		  <div class="blog-post">
-            <h2 class="blog-post-title">The electrical circuit</h2>
-            <p class="blog-post-meta">October 17, 2017 by <a href="index.html#who">Jens / Joris</a></p>
-
-            <p>This is our electric circuit. We used a program named <a href="http://fritzing.org">Fritzing</a> to really show the tech side of our drone. In this sketch everything that is on the tech side is included. Thist makes it easyier to work with as a blueprint for the electrical design of the drone.</p>
-			<img id="circuit" class="img-fluid" src="assets/fritz.png" alt="Electronics">
-          </div>
-		  <hr class="featurette-divider">
-		  
-		  <!-- blog post -->
-		  <div class="blog-post">
-            <h2 class="blog-post-title">Design</h2>
-			<p class="blog-post-meta">October 20, 2017 by <a href="index.html#who">Joris</a></p>
-			<p>There are a couple of things that we want to built. Thse are sort of upgrades of the drone. Building these things wont be easy. We will need the drone design to be able to upgrade it.</p>
-			<img id="design" class="img-fluid" src="assets/3D3.jpg" alt="3D3"
-          </div>
-		  <hr class="featurette-divider">
-		  
-		  <!-- blog post -->
-		  <div class="blog-post">
-            <h2 class="blog-post-title">The looks</h2>
-            <p class="blog-post-meta">October 15, 2017 by <a href="index.html#who">Jens</a></p>
-
-            <p>A blueprint of the drone.</p>
-            <img id="blue" class="img-fluid" src="assets/sketch.jpg" alt="sketch">
-            
-          </div>
-		  <hr class="featurette-divider">
-		  
-		  <!-- blog post -->
-		  <div class="blog-post">
-            <h2 class="blog-post-title">The features</h2>
-            <p class="blog-post-meta">October 15, 2017 by <a href="index.html#who">Jens</a></p>
-			<p>Here are our features.</p>
-            <ul>
-			  <li>A camera mount</li>
-			  <li>Retractable landing gear</li>
-			  <li>Led lights (red at the left, green on the right Back under P.O.V)</li>
-			  <li>Cactus skeleton frame (is it printable ?)</li>
-			  <li>Selfmade flight controller (to difficult ?)</li>
-			  <li>Gyroscope to balance the drone</li>
-			  <li>Some batteries</li>
-			</ul>
-			
-          </div>
-		  <hr class="featurette-divider">
-		  
-		  
-		  <!-- blog post -->
-		  <div class="blog-post">
-            <h2 class="blog-post-title">Our project Info</h2>
-            <p class="blog-post-meta">October 17, 2017 by <a href="index.html#who">Jens / Joris</a></p>
-
-            <p>In this project we will creating a quadcopter. As motherboard we will use a Raspberry PI. This motherboard will be able to control the landing gear, the led lights, the flight pilot and much more. We had this idee because we both love flying and because we couldn't wait to create something on our own. We got the assignment to do whatever we wanted and the first thing we thought of was this. It wasn't an easy idee because we knew what we were getting our selfs in to. Our motivation was just unstoppable. Then a couple of days later we thought that building a drone was something. Yes. Upgrading it would give us the opportunity to work on this project for the entire year. So we started to speculate about a couple nice idees. Some exeples of these are: a cactus skeleton frame, it gives us the best cooling for all the components and looks very nice. We also thought about a retractable landing gear so it'll be more aerodynamic.</p>
-          </div>
-		  
-		  
-		  <!-- pagination -->
-		  <nav class="blog-pagination">
-            <a class="btn btn-outline-primary" href="#">Newer</a>
-            <a class="btn btn-outline-secondary disabled" href="#">Older</a>
-          </nav>
-		</div>
-		
-		<!-- blog sidebar -->
-		<div class="col-sm-3 offset-sm-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>Futur Plans</h4>
-            <p>Creating a Raspberry PI controlled quadcopter will be our main goal. Other plans are: 
-			<ul>
-              <li>Cactus skeleton frame</li>
-              <li>Flight pilot</li>
-              <li>Led ligths</li>
-			  <li>Retractable landing gear</li>
-			  <li>Mounted camera</li>
-			  <li>An Airsoft gun mount</li>
-			  <li>Remote controller</li>
-			<li>Airsoft gun trigger</li>
-				<li>More later</li>
-			  
-            </ul>
-			</p>
-          </div>
-        </div>
+		<img src="assets/PI3.jpg" alt="PI3"></img>
 		
 	  </div>
-	</div>
-	<!--end blog -->
 	  
-	<!-- The Modal -->
-	<div id="myModal" class="modal">
-	  <span class="close">close</span>
-	  <img class="modal-content img-fluid" id="img01">
-	  <div id="caption"></div>
-	</div>
+	  <!-- blog post -->
+	  <div class="post">
+	    
+		<!-- separater -->
+		<hr class="separator">
+		
+	    <h2>Mindmap</h2>
+		<p class="meta">October 21, 2017 by <a href="index.html#who">Joris</a>.</p>
+		<p>This mindmap shows all the futur objectives. Some are possible and some aren't. Having fantasy is important. But to be able to really built something is so much better. That is why we made this mindmap. It is an easy road to follow and it gives us a good foundation to start on. A clear path is something that is of major import when you're creating a project off this size.</p>
+	        <p>You can click on the picture down below. But if you want to explore our mindmap even better then just looking at a picture just go to: <a href="https://mm.tt/975947672?t=UG2Q2uHqL2">GG-PI Mindmap</a> "No login required".</p> 
+			<p>Or if you want to create your own mindmap. Go to: <a href="https://www.mindmeister.com">Mindmeister.com</a>.</p>
+		<img src="assets/mindmap.jpg" alt="mindmap"></img>
+		
+	  </div>
 	  
+	  <!-- blog post -->
+	  <div class="post">
+	    
+		<!-- separater -->
+		<hr class="separator">
+		
+	    <h2>Design</h2>
+		<p class="meta">October 20, 2017 by <a href="index.html#who">Joris</a>.</p>
+		<p>There are a couple of things that we want to built. Thse are sort of upgrades of the drone. Building these things wont be easy. We will need the drone design to be able to upgrade it.</p>
+		<img src="assets/3D3.jpg" alt="3d3"></img>
+		
+	  </div>
+	  
+	  <!-- blog post -->
+	  <div class="post">
+	  
+	    <!-- separater -->
+		<hr class="separator">
+		
+	    <h2>The electrical circuit</h2>
+		<p class="meta">October 17, 2017 by <a href="index.html#who">Jens</a>.</p>
+		<p>This is our electric circuit. We used a program named Fritzing to really show the tech side of our drone. In this sketch everything that is on the tech side is included. Thist makes it easyier to work with as a blueprint for the electrical design of the drone.</p>
+		<img src="assets/fritz.png" alt="looks image"></img>
+	  </div>
+	  
+	  <!-- blog post -->
+	  <div class="post">
+	  
+	    <!-- separater -->
+		<hr class="separator">
+		
+	    <h2>The looks</h2>
+		<p class="meta">October 15, 2017 by <a href="index.html#who">Jens</a>.</p>
+		<p>A fast sketch of how it will looks.</p>
+		<img src="assets/sketch.jpg" alt="looks image"></img>
+	  </div>
+	  
+	  <!-- button to show more posts -->
+	  <div class="pagination">
+	    
+		<button id="older" class="pagbtn" href="">Older</button>
+		<button id="newer" class="pagbtn disabled" href="">Newer</button>
+		
+	  </div>
+	  
+	</div>
+	
 	<!-- footer -->
-	<footer class="blog-footer">
-      <p>
-	    <a href="#">Back to top</a>
-    </footer>
-	<!-- end footer -->
+	<div class="footer">
+	  <!-- copyright -->
+	  <p>Copytight gg-pi.tk</p>
+	  
+	  <!-- button to top -->
+	  <button id="back">&#94;</button>
+	  
+	</div>
 	
-	<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.2.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.contenthover.min.js"></script>
+	<!-- img viewer -->
+	<div id="holder">
+	  
+	  <!-- close button -->
+	  <button id="close">&#10006;</button>
+	  
+	  <!-- image holder -->
+	  <img src="">
+	  
+	</div>
 	
-	<script>
-	// Get the modal
-	var modal = document.getElementById('myModal');
-
-	// Get the image and insert it inside the modal - use its "alt" text as a caption
-	var img = document.getElementById('blue');
-	var img2 = document.getElementById('design');
-	var img3 = document.getElementById('circuit');
-	var img4 = document.getElementById('mindmap');
-	var img5 = document.getElementById('mindmap');
-	var img6 = document.getElementById('PI3');
-	var img7 = document.getElementById('3D2');
-	var img8 = document.getElementById('turnigy');
-	var img9 = document.getElementById('3D Drone');
-	var modalImg = document.getElementById("img01");
-	var captionText = document.getElementById("caption");
-	
-	//handle click for myImg
-	img.onclick = function(){
-		modal.style.display = "block";
-		modalImg.src = this.src;
-	}
-	
-	//handle click for myImg2
-	img2.onclick = function(){
-		modal.style.display = "block";
-		modalImg.src = this.src;
-	}
-	
-	//handle click for myImg3
-	img3.onclick = function(){
-		modal.style.display = "block";
-		modalImg.src = this.src;
-	}
-	
-	//handle click for myImg4
-	img4.onclick = function(){
-		modal.style.display = "block";
-		modalImg.src = this.src;
-	}
-	
-	//handle click for myImg5
-	img5.onclick = function(){
-		modal.style.display = "block";
-		modalImg.src = this.src;
-	}
-	
-	//handle click for myImg4
-	img6.onclick = function(){
-		modal.style.display = "block";
-		modalImg.src = this.src;
-	}
-
-	//handle click for myImg4
-	img7.onclick = function(){
-		modal.style.display = "block";
-		modalImg.src = this.src;
-	}
-	
-	//handle click for myImg4
-	img8.onclick = function(){
-		modal.style.display = "block";
-		modalImg.src = this.src;
-	}
-	
-	//handle click for myImg4
-	img9.onclick = function(){
-		modal.style.display = "block";
-		modalImg.src = this.src;
-	}
-	// Get the <span> element that closes the modal
-	var span = document.getElementsByClassName("close")[0];
-
-	// When the user clicks on <span> (x), close the modal
-	span.onclick = function() { 
-		modal.style.display = "none";
-	}
-	</script>
+	<!-- javascripts -->
+	<script src="js/blog_script.js"></script>
 	
   </body>
+
 </html>
