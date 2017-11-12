@@ -1,304 +1,259 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-  <head>
-	
-	<title>GG-PI Website</title>
-	<link rel="icon" type="image/png" href="assets/favicon.png">
-  
-	<!-- Required meta tags -->
-    <meta charset="utf-8">
-	<meta name="description" content="GG-PI website">
-	<meta name="keywords" content="GG-PI, Drone, Raspberry, Raspberry PI, PI, Quadcopter">
-	<meta name="author" content="Jens Van Humbeeck &#38; Joris Van Duyse">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+<html lang="en">
+  
+  <head>
+  
+    <!-- title -->
+    <title>GG-PI Website</title>
+	
+	<!-- logo -->
+	<link rel="icon" type="image/png" href="assets/favicon.png">
+	
+	<!-- search engine info -->
+	<meta charset="UTF-8">
+	<meta name="description" content="GG-PI website">
+	<meta name="author" content="Jens Van Humbeeck &#38; Joris Van Duyse">
+	<meta name="keywords" content="GG-PI, Drone, Raspberry, Raspberry PI, PI, Quadcopter">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- google webmaster tool verification -->
+	<meta name="google-site-verification" content="Mc51fWVfp5suedrc0ncJVObPpr309S0RzLJNPgT7mec" />
+	
+	<!-- stylesheets -->
 	<link rel="stylesheet" type="text/css" href="css/style.css" >
 	
-    <title>GG-PI Blog</title>
   </head>
   
-  <body>
   
-    <!-- navbar -->
-	<nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
-	  <a class="navbar-brand space" href="#">
-		<img src="assets/logo.png" width="90" height="50" alt="">
+  <body>
+    
+	<!-- navbar -->
+	<div id="navbar" state="false">
+	  
+	  <!-- logo -->
+	  <a href="#home">
+	    <img id="logo" src="assets/logo.png">
 	  </a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
-
-	  <div class="navbar-collapse collapse menu-center" id="navbarCollapse">
-		<ul class="navbar-nav ml-auto">
-		  <li class="nav-item space">
-			<a class="nav-link active" href="#Carousel">Home <span class="sr-only">(current)</span></a>
-		  </li>
-		  <li class="nav-item space">
-			<a class="nav-link" href="#who">Who</a>
-		  </li>
-		  <li class="nav-item space">
-			<a class="nav-link" href="#what">What</a>
-		  </li>
-		  <li class="nav-item space">
-			<a class="nav-link" href="#why">Why</a>
-		  </li>
-		  <li class="nav-item space">
-			<a class="nav-link" href="blog.html">Blog</a>
-		  </li>
+	  
+	  <!-- buttons -->
+	  <div id="buttons">
+	    <ul class="list">
+		  <li><a id="bhome" class="active">Home</a></li>
+		  <li><a id="bwho">Who</a></li>
+		  <li><a id="bwhat">What</a></li>
+		  <li><a id="bwhy">Why</a></li>
+		  <li><a href="blog.html">Blog</a></li>
 		</ul>
 	  </div>
-	</nav>
-	<!-- end navbar -->
-	
-	<!-- the carousel -->
-	<div id="Carousel" class="carousel slide" data-ride="carousel">
-	  <div class="carousel-inner">
-	    <div class="carousel-item">
-		
-		  <!-- screen resolutions -->
-		  <div class="largescreen">
-		    <img class="res" src="assets/quad_1080.jpg" alt="First slide">
-		  </div>
-		  <div class="mediumscreen">
-		    <img class="res" src="assets/quad_720.jpg" alt="First slide">
-		  </div>
-		  <div class="smallscreen">
-		    <img class="res" src="assets/quad_480.jpg" alt="First slide">
-		  </div>
-		  
-		  <!-- titles -->
-		  <div class="carousel-caption d-none d-block">
-			<h1 class="title">Quadcopter</h1>
-			<p class="subTitle-white">A drone based on a PI controlled software. We want a chalange. This is the closest we can get.</p>
-		  </div>
-		</div>
-		
-		<div class="carousel-item active">
-		  
-		  <!-- screen resolutions -->
-		  <div class="largescreen">
-		    <img class="res" src="assets/blender_1080.png" alt="Second slide">
-		  </div>
-		  <div class="mediumscreen">
-		    <img class="res" src="assets/blender_720.png" alt="Second slide">
-		  </div>
-		  <div class="smallscreen">
-		    <img class="res" src="assets/blender_480.png" alt="Second slide">
-		  </div>
-		  
-		  <!-- titles -->
-		  <div class="carousel-caption d-none d-block">
-			<h1 class="title">The model</h1>
-			<p class="subTitle">Cactus skeleton frame, it looks nice and lowers the chance of overheating.</p>
-		  </div>
-		</div>
-		
-		<div class="carousel-item">
-		  <!-- screen resolutions -->
-		  <div class="largescreen">
-		    <img class="res" src="assets/dronesun_1080.jpg" alt="Third slide">
-		  </div>
-		  <div class="mediumscreen">
-		    <img class="res" src="assets/dronesun_720.jpg" alt="Third slide">
-		  </div>
-		  <div class="smallscreen">
-		    <img class="res" src="assets/dronesun_480.jpg" alt="Third slide">
-		  </div>
-		  
-		  <!-- titles -->
-		  <div class="carousel-caption d-none d-block">
-			<h1 class="title">Land in sight</h1>
-			<p class="subTitle">One drone. One goal. One bright futur.</p>
-		  </div>
-		</div>
-		
-		<div class="carousel-item">
-		  <!-- screen resolutions -->
-		  <div class="largescreen">
-		    <img class="res" src="assets/dark_drone1080.png" alt="Fourth slide">
-		  </div>
-		  <div class="mediumscreen">
-		    <img class="res" src="assets/dark_drone720.png" alt="Fourth slide">
-		  </div>
-		  <div class="smallscreen">
-		    <img class="res" src="assets/dark_drone480.png" alt="Fourth slide">
-		  </div>
-		  
-		  <!-- titles -->
-		  <div class="carousel-caption d-none d-block">
-			<h1 class="title">The Foundation</h1>
-			<p class="subTitle">The origin of our ideas comes from other huge drone companies. "The BIG-Brother idea"</p>
-		  </div>
-		</div>
-		
-		<div class="carousel-item">	
-		  <!-- screen resolutions -->
-		  <div class="largescreen">
-		    <img class="res" src="assets/pi_1080.jpg" alt="Fifth slide">
-		  </div>
-		  <div class="mediumscreen">
-		    <img class="res" src="assets/pi_720.jpg" alt="Fifth slide">
-		  </div>
-		  <div class="smallscreen">
-		    <img class="res" src="assets/pi_480.jpg" alt="Fifth slide">
-		  </div>
-		  
-		  <!-- titles -->
-		  <div class="carousel-caption d-none d-block">
-			<h1 class="title">Raspberry Pi</h1>
-			<p class="subTitle">The Raspberry Pi is our motherboard and everything is connected to it with GPIO pins.</p>
-		  </div>
-		</div>
-	  </div>
-	  <a class="carousel-control-prev" href="#Carousel" role="button" data-slide="prev">
-	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-	  </a>
-	  <a class="carousel-control-next" href="#Carousel" role="button" data-slide="next">
-		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		<span class="sr-only">Next</span>
-	  </a>
-	</div>
-	<!-- end of carousel -->
-	
-	<!-- info and ... -->
-	<div class="container marketing">
-	  <div class="row">
-		<div class="col-lg-4 heading">
-		  <img class="rounded-circle info" src="assets/who.jpg" alt="Generic placeholder image" width="140" height="140">
-		  <h2>Our team?</h2>
-		  <p>Our cooperation is based on a skeleton staff. Which in this case means that our project will be created by only two engineers. We are both interested in modern technology and are very motivated to succesfully finish this project. My name is Joris Van Duyse and I cooperate with Jens Van Humbeeck to work on GG-PI. </p>
-		  <p><a class="btn btn-secondary" href="#who" role="button">Click to get to know us better»</a></p>
-		</div><!-- /.col-lg-4 -->
-		<div class="col-lg-4 heading">
-		  <img class="rounded-circle info" src="assets/what.jpg" alt="Generic placeholder image" width="140" height="140">
-		  <h2>Our goals?</h2>
-		  <p>We are trying to create a quadcopter with the help of a Raspberry PI. We are going to hang a camera on it so we could take pictures or film the school.</p>
-		  <p><a class="btn btn-secondary" href="#what" role="button">Click to see what we are planning»</a></p>
-		</div><!-- /.col-lg-4 -->
-		<div class="col-lg-4 heading">
-		  <img class="rounded-circle info" src="assets/why.jpg" alt="Generic placeholder image" width="140" height="140">
-		  <h2>Our reasons?</h2>
-		  <p>The drone a project of STEM, a course at school. We could choose our own project,
-		  but this is something that intresses us both. We learn a lot of skills with it like programming, building an electrical circuit and a lot more.
-		  ASO is not a really technical course, so this is a great opportunity to learn some more technical things.</p>
-		  <p><a class="btn btn-secondary" href="#why" role="button">Click to read why we do this»</a></p>
-		</div><!-- /.col-lg-4 -->
+	  
+	  <!-- collapse -->
+	  <div id="collapse">
+	    <button id="collapsor">&#9776;</button>
 	  </div>
 	  
-	  <!-- start featurettes -->
-	  <hr class="featurettes-divider">
-	  <div id="who" class="row featurette">
-        <div class="col-md-12">
-          <h2 class="featurette-heading">Who are we? <span class="text-muted">What are we interested in?</span></h2>
-          <p class="lead">The team that will be working on GG-PI includes Joris and Jens. We have the same goals. We both are much a like. We enjoy working on these kind of projects. Although our intrests are some sort of different we seem to find ourselfs in a good position to finnish this project with great succes. Simply put: My name Joris Van Duyse and my teammate is Jens Van Humbeeck. We both love flying. So everything that has to do with planes, drones, physics, aerodynamics and programming are things that we are interested in.</p>
- 	  </div>
-        <div class="col-md-6" style="padding: 10px; width: 310px; margin: 0 auto; flex: 0;">
-          <div class="profile">
-		    <h3 class="name">Joris Van Duyse</h3>
-		    <img id="joris" src="assets/joris.JPG" width="300" height="300"/>
-		    <div class="contenthover">
-			  <P class="bio">Good day. I'm joris and I love planes and creating things. In this project I hope to learn a lot about programming . My hobby is gliding. That and my curiosity are the reasons why I started this project with Jens.</p>
-		    </div>
-		  </div>
-		</div>
-		<div class="col-md-6" style="padding: 10px; width: 310px; margin: 0 auto; flex: 0;">
-          <div class="profile">
-		    <h3 class="name">Jens Van Humbeeck</h3>
-		    <img id="jens" src="assets/jens.jpg" width="300" height="300"/>
-		    <div class="contenthover">
-		      <P class="bio">Hey, I'm Jens and this project helps me a lot to get a better understanding of electronics. It also gives my the opportunity to improve my skills of programming. As you can see on the picture, my hobby is driving with a dirt bike.</p>
-		    </div>
-		  </div>
-		</div>
-      </div>
-	  <hr class="featurette-divider">
-	  <div id="what" class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">What are our plans? <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Our main plan is to built a drone. We have some other things that we want to accomplish too. After building the drone we will upgrade the fligtpilot with a PI motherboard. This will enable us to work more freely and give us the possibilities to program and run the flightpilot on a mora advanced software. This will take a huge amount of time and money. So we want to take it stap by stap, start slow then move as we get more experienced we begin upgrading the drone. We know it is possible. We just have to start small and built the foundation.</p>
-          <p><a class="btn btn-secondary" href="blog.html#plan" role="button">Click for more»</a></p>
-		</div>
-        <div class="col-md-5 order-md-1">
-	    <img class="img-fluid" alt="mindmap" style="max-width: 100%; max-height: 100%; margin-top: 7rem;" src="assets/mindmap.jpg">
-        </div>
-      </div>
-	  <hr id="why" class="featurette-divider">
-	  <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Why are we doing this? <span class="text-muted">A drone, something like Utopia.</span></h2>
-          <p class="lead">This project started out just for a school course. But it will most likely grow into something huge. We are both in physics courses. That includes the possibility to start a project like this one. The momment we had to decide what project we would chose. Knowing that both of us love everything that has to do with flying. The idea of building a drone flourished in both of our minds. That being said there was not much to speculate about. So we got to work.</p>
-        </div>
-        <div class="col-md-5">
-		  <img class="img-fluid" alt="assembly" style="max-width: 100%; max-height: 100%; margin-top: 7rem;" src="assets/assembly.gif">
-        </div>
-      </div>
-	  <hr class="featurette-divider">
-	  <!-- end featurettes -->
+	  
 	</div>
-	<!-- end of info -->
+	
+	<!-- home div (carousel, info) -->
+	<div id="home" class="section">
+	  
+	  <!-- carousel -->
+	  <div id="carousel">
+	    
+		<!-- slide -->
+		<div class="slide" style="display:inline-block">
+		  <!-- responsive image -->
+		  <div class="smallscreen">
+		    <img src="assets/dronesun_480.jpg">
+		  </div>
+		  <div class="mediumscreen">
+		    <img src="assets/dronesun_720.jpg">
+		  </div>
+		  <div class="largescreen">
+		    <img src="assets/dronesun_1080.jpg">
+		  </div>
+		  <div class="holder">
+		    <h1>Land in sight</h1>
+			<p>One drone, one goal, one bright futur.</p>
+		  </div>
+		</div>
+		
+		<!-- slide -->
+		<div class="slide">
+		  <div class="smallscreen">
+		    <img src="assets/pi_480.jpg">
+		  </div>
+		  <div class="mediumscreen">
+		    <img src="assets/pi_720.jpg">
+		  </div>
+		  <div class="largescreen">
+		    <img src="assets/pi_1080.jpg">
+		  </div>
+		  <div class="holder">
+		    <h1>Raspberry Pi</h1>
+			<p>Our motherboard, small but powerful.</p>
+		  </div>
+		</div>
+		
+		<!-- slide -->
+		<div class="slide">
+		  <div class="smallscreen">
+		    <img src="assets/quad_480.jpg">
+		  </div>
+		  <div class="mediumscreen">
+		    <img src="assets/quad_720.jpg">
+		  </div>
+		  <div class="largescreen">
+		    <img src="assets/quad_1080.jpg">
+		  </div>
+		  <div class="holder">
+		    <h1>Quadcopter</h1>
+			<p>Our goal, difficult but possible.</p>
+		  </div>
+		</div>
+		
+		<!-- carousel buttons -->
+		<div id="bholder">
+		  <button id="lbutton">&#9668;</button>
+		  <button id="rbutton">&#9658;</button>
+		</div>
+		
+	  </div>
+	  
+	  <!-- spacor -->
+	  <div class="spacor"></div>
+	  
+	  <!-- info -->
+	  <div class="container">
+	  
+	      <!-- who -->
+	      <div class="column">
+		  
+		    <img class="round" src="assets/who.jpg" alt="team">
+		  
+		    <h2>Our Team?</h2>
+		  
+		    <p>Our cooperation is based on a skeleton staff. Which in this case means that our project will be created by only two engineers. We are both interested in modern technology and are very motivated to succesfully finish this project.</p>
+		  
+		    <p><button class="" href="#">Click to see who we are&#187;</button>
+		  
+		  </div>
+		
+		  <!-- what -->
+		  <div class="column">
+		  
+		    <img class="round" src="assets/what.jpg" alt="team">
+		  
+		    <h2>Our Goals?</h2>
+		  
+		    <p>We are trying to create a quadcopter with the help of a Raspberry PI. We are going to hang a camera on it so we could take pictures or film the school.</p>
+		  
+		    <p><button class="" href="#">Click to see what we are doing&#187;</button>
+		  
+		  </div>
+		
+		  <!-- why -->
+		  <div class="column">
+		  
+		    <img class="round" src="assets/why.jpg" alt="team">
+		  
+		    <h2>Our Reasons?</h2>
+		  
+		    <p>The drone a project of STEM, a course at school. We could choose our own project, but this is something that intresses us both. ASO is not a really technical course, so this is a great opportunity to learn some more technical things.</p>
+		  
+		    <p><button class="" href="#">Click to see why we do this&#187;</button>
+		  
+		  </div>
+	  </div>
+	  
+	</div>
+	
+	<!-- who div -->
+	<div id="who" class="container section">
+	  
+	  <!-- separater -->
+	  <hr class="separator">
+	  
+	  <!-- text -->
+	  <h1 class="title">Who are we ? <span class="nexttitle">Two idiots.</span></h1>
+	  <p class="subtitle">Two people with two left hands. Although our intrests are some sort of different we seem to find ourselfs in a good position to finnish this project with great succes.</p>
+	  <p class="tip">TIP, hover over the images.</p>
+	  
+	  <!-- images -->
+	  <div class="wrapper">
+	    <div class="person">
+	      <h1>Joris Van Duyse</h1>
+		  <div class="floater">
+	        <img src="assets/joris.JPG">
+		    <div class="bio" style="right: -95%;">
+		      <p>Good day. I'm joris and I love planes and creating things. In this project I hope to learn a lot about programming . My hobby is gliding. That and my curiosity are the reasons why I started this project.</p>
+			  
+  		    </div>
+	  	  </div>
+	    </div>
+		
+	    <div class="person">
+	      <h1>Jens Van Humbeeck</h1>
+		  <div class="floater">
+	        <img src="assets/jens.jpg">
+		    <div class="bio" style="left: -95%;">
+		      <p>Hey, Its me Jens, and I'm really intrested in programming and electric circuits.
+			   With this project I hope to get a better understanding of electricity. 
+			   As you can see on the picture, as hobby i drive with a dirt bike.</p>
+		    
+		    </div>
+		  </div>
+	    </div>
+	  </div>
+	  
+	</div>
+	
+	<!-- what div -->
+	<div id="what" class="container section">
+  
+	  <!-- separater -->
+	  <hr class="separator">
+	  
+	  <!-- text -->
+	  <h1 class="title">What are we planning ? <span class="nexttitle">I think a drone.</span></h1>
+	  <p class="subtitle respp">Our main plan is to built a drone. We have some other things that we want to accomplish too. After building the drone we will upgrade the fligtpilot with a PI motherboard. This will enable us to work more freely and give us the possibilities to program and run the flightpilot on a more advanced software. This will take a huge amount of time and money. So we want to take it stap by stap, start slow then move as we get more experienced we begin upgrading the drone. We know it is possible. We just have to start small and built the foundation.</p>  
+	  
+	  <!-- image -->
+	  <img class="picture respi" src="assets/mindmap.jpg">
+	  
+	</div>
+	
+	<!-- why div -->
+	<div id="why" class="container section">
+	  
+	  <!-- separater -->
+	  <hr class="separator">
+	  
+	  <!-- text -->
+	  <h1 class="title">Why the hell are we doing this ? <span class="nexttitle">Because we needed to.</span></h1>
+	  <p class="subtitle respp">This project started out for a school course named STEM. The purpose of this project was to do self-study and learn to work in teams. It doesn't even matter if it fails or not.
+	  So we had to decide what we would make, because we both low flying, we choose to build a drone. 
+	  We immediately started to dream, but we had to stay realistic. We don't want to fail and how bigger we see it, how more it was doomed to fail.
+	  First, we would do everything ourselves, but it was slightly out of league.
+	  After that, we decided to first get a drone in the air and only then we can start to add some features.</p>  
+	  
+	  <!-- image -->
+	  <img class="picture respi" src="assets/why.jpg">
+	  
+	</div>
 	
 	<!-- footer -->
-	  <footer class="blog-footer">
-	  <p>© 2017 GG-PI</p>
-        <p><a href="#">Back to top</a></p>
-      </footer>
-	  <!-- end footer -->
+	<div class="footer">
+	  <!-- copyright -->
+	  <p>Copytight gg-pi.tk</p>
+	  
+	  <!-- button to top -->
+	  <button id="back">&#94;</button>
+	  
+	</div>
+	<!-- javascripts -->
+	<script src="js/script.js"></script>
 	
-	<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.2.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.contenthover.min.js"></script>
-	<script src="js/affix.js"></script>
-	<script>
-    $('#joris').contenthover({
-      overlay_width:270,
-      overlay_height:180,
-      effect:'slide',
-      slide_direction:'right',
-      overlay_x_position:'right',
-      overlay_y_position:'center',
-      overlay_background:'#000',
-      overlay_opacity:0.8
-    });
-    $('#jens').contenthover({
-      overlay_width:270,
-      overlay_height:180,
-      effect:'slide',
-      slide_direction:'left',
-      overlay_x_position:'left',
-      overlay_y_position:'center',
-      overlay_background:'#000',
-      overlay_opacity:0.8
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-    
-    //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        
-        $('a').each(function () {
-            $(this).removeClass('active');
-        })
-        $(this).addClass('active');
-      
-        var target = this.hash,
-            menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
-        }, 500, 'swing', function () {
-            window.location.hash = target;
-        });
-    });
-});
-  </script>
   </body>
 </html>
